@@ -14,9 +14,6 @@ RUN npm -y install -g npm
 RUN npm -y install -g n 
 RUN n stable
 
-# install cron 
-RUN apt-get -y install cron
-
 # fix npm - not the latest version installed by apt-get
 RUN ln -sf /usr/local/n/versions/node/10.8.0/bin/node /usr/bin/node
 
