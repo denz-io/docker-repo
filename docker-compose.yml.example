@@ -1,18 +1,18 @@
 version: '2'
 
 services:
-    conception_mysql:
-        container_name: <container name> 
-        image: <image name> 
+    <container_name>:
+        container_name: <container_name> 
+        image: <image_name> 
         ports:
-            - <exposed port>:<container port>
+            - <exposed_port>:<container_port>
         volumes:
-            - <volume mount address>:<to mount address>
+            - <volume_mount_address>:<to_mount_address>
         environment:
-            - <environment settings> 
+            - <environment_settings> 
         depends_on:
-            - <optional container dependency> 
-        restart: <restart mode> 
+            - <optional_container_dependency> 
+        restart: <restart_mode> 
 volumes:
-    <volume file name>:
+    <volume_file_name>:
 
